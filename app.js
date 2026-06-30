@@ -31,7 +31,7 @@ function renderLogin(){
       <div class="loginTools"><label class="check"><input type="checkbox" checked> Beni hatırla</label><a>Şifremi unuttum</a></div>
       <button class="primary full" onclick="enterApp()">Sisteme Gir</button>
       <div class="secure">🔒 Güvenli öğrenci, veli ve yönetici paneli</div>
-    </div></section>
+    </div><div class="loginBenefits"><div>🛡️<b>Güvenli Platform</b><span>Verileriniz korunur</span></div><div>☁️<b>Her Yerden Erişim</b><span>İstediğin zaman, istediğin yerden</span></div><div>📱<b>Tüm Cihazlarda</b><span>Telefon, tablet ve bilgisayar uyumlu</span></div></div></section>
   </div>`;
 }
 function roleLabel(r){ return {student:'Öğrenci', parent:'Veli', teacher:'Öğretmen', admin:'Admin'}[r]; }
