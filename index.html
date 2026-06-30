@@ -1,121 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Star Academy Cyprus</title>
-  <meta name="theme-color" content="#071A43" />
-  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <section class="hero-left">
-      <div class="stars"></div>
-      <div class="glow glow-one"></div>
-      <div class="glow glow-two"></div>
-
-      <header class="brand brand-left">
-        <img src="assets/star-logo.svg" alt="Star Academy Cyprus logo" />
-        <div>
-          <strong>STAR ACADEMY</strong>
-          <span>CYPRUS</span>
-        </div>
-      </header>
-
-      <main class="hero-content">
-        <h1>Hayaline ulaşmanın<br><span>en doğru yolu!</span></h1>
-        <p>Planlı çalış, düzenli tekrar yap ve hedefini gerçekleştir.</p>
-        <div class="gold-line"></div>
-
-        <div class="hero-visual-wrap">
-          <div class="chart-line" aria-hidden="true"></div>
-          <div class="floating-icon icon-chart">▥</div>
-          <div class="floating-icon icon-clock">◷</div>
-          <div class="floating-icon icon-target">◎</div>
-          <img class="hero-book" src="assets/hero-book.svg" alt="Kitap, mezuniyet kepi ve yıldız illüstrasyonu" />
-        </div>
-      </main>
-
-      <div class="feature-cards">
-        <article class="feature-card">
-          <span class="feature-icon blue">📖</span>
-          <h3>Zengin İçerik</h3>
-          <p>Binlerce soru ve konu anlatımı</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon green">🎯</span>
-          <h3>Akıllı Takip</h3>
-          <p>Gelişimini takip et, eksiklerini gör</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon purple">📊</span>
-          <h3>Detaylı Analiz</h3>
-          <p>Başarı grafikleri ve performans analizi</p>
-        </article>
-        <article class="feature-card">
-          <span class="feature-icon gold">🏅</span>
-          <h3>Hedefe Ulaş</h3>
-          <p>Planlı çalış, başarını katla</p>
-        </article>
+      <div class="stars" aria-hidden="true"></div>
+      <div class="grid-lines" aria-hidden="true"></div>
+      <div class="brand brand-left">
+        <img src="assets/star-logo.svg" alt="" class="brand-star" />
+        <div><strong>STAR ACADEMY</strong><span>CYPRUS</span></div>
       </div>
 
-      <footer class="hero-footer">© 2026 Star Academy Cyprus. Tüm hakları saklıdır.</footer>
+      <div class="hero-copy">
+        <h1>Hayaline ulaşmanın<br><em>en doğru yolu!</em></h1>
+        <p>Planlı çalış, düzenli tekrar yap ve hedefini gerçekleştir.</p>
+        <i class="gold-line"></i>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <span class="blue-glow"></span>
+        <span class="signal signal-1">📊</span>
+        <span class="signal signal-2">⏱</span>
+        <span class="signal signal-3">🎯</span>
+        <svg class="trend" viewBox="0 0 520 220" fill="none">
+          <path d="M20 170 L95 116 L155 150 L230 92 L300 120 L365 62 L430 46 L498 14" stroke="#1474ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".92"/>
+          <path d="M498 14 L475 22 L486 44" stroke="#1474ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#1474ff"><circle cx="20" cy="170" r="8"/><circle cx="95" cy="116" r="8"/><circle cx="155" cy="150" r="8"/><circle cx="230" cy="92" r="8"/><circle cx="300" cy="120" r="8"/><circle cx="365" cy="62" r="8"/><circle cx="430" cy="46" r="8"/></g>
+        </svg>
+        <img src="assets/hero-book.svg" alt="" class="book-art" />
+      </div>
+
+      <div class="feature-cards">
+        <article><div class="ic blue">📖</div><h3>Zengin İçerik</h3><p>Binlerce soru ve konu anlatımı</p></article>
+        <article><div class="ic green">🎯</div><h3>Akıllı Takip</h3><p>Gelişimini takip et, eksiklerini gör</p></article>
+        <article><div class="ic purple">📈</div><h3>Detaylı Analiz</h3><p>Başarı grafikleri ve performans analizi</p></article>
+        <article><div class="ic gold">🏅</div><h3>Hedefe Ulaş</h3><p>Planlı çalış, başarını katla</p></article>
+      </div>
+
+      <footer>© 2026 Star Academy Cyprus. Tüm hakları saklıdır.</footer>
     </section>
 
     <section class="login-right">
       <div class="login-card">
-        <header class="brand brand-card">
-          <img src="assets/star-logo.svg" alt="Star Academy Cyprus logo" />
-          <div>
-            <strong>STAR ACADEMY</strong>
-            <span>CYPRUS</span>
-          </div>
-        </header>
-
+        <div class="brand brand-card">
+          <img src="assets/star-logo.svg" alt="" class="brand-star" />
+          <div><strong>STAR ACADEMY</strong><span>CYPRUS</span></div>
+        </div>
         <h2>Giriş Yap</h2>
-        <p class="login-subtitle">Hesabınıza giriş yaparak devam edin.</p>
+        <p class="sub">Hesabınıza giriş yaparak devam edin.</p>
 
-        <div class="role-grid" role="tablist" aria-label="Giriş türü">
-          <button class="role active" type="button"><span>🎓</span>Öğrenci</button>
-          <button class="role" type="button"><span>👥</span>Veli</button>
-          <button class="role" type="button"><span>👤</span>Öğretmen</button>
-          <button class="role" type="button"><span>🛡️</span>Admin</button>
+        <div class="role-grid">
+          <button class="active"><span>🎓</span>Öğrenci</button>
+          <button><span>👥</span>Veli</button>
+          <button><span>👤</span>Öğretmen</button>
+          <button><span>🛡️</span>Admin</button>
         </div>
 
-        <form>
-          <label for="username">Kullanıcı Adı</label>
-          <div class="input-wrap">
-            <span>👤</span>
-            <input id="username" type="text" placeholder="Kullanıcı adınızı giriniz" />
-          </div>
+        <label>Kullanıcı Adı</label>
+        <div class="input-wrap"><span>👤</span><input value="ogrenci" placeholder="Kullanıcı adınızı giriniz" /></div>
+        <label>Şifre</label>
+        <div class="input-wrap"><span>🔒</span><input type="password" value="1234" placeholder="Şifrenizi giriniz" /><span>◌</span></div>
 
-          <label for="password">Şifre</label>
-          <div class="input-wrap">
-            <span>🔒</span>
-            <input id="password" type="password" placeholder="Şifrenizi giriniz" />
-            <button type="button" class="eye">⌧</button>
-          </div>
-
-          <div class="form-tools">
-            <label class="remember"><input type="checkbox" checked /> Beni Hatırla</label>
-            <a href="#">Şifremi Unuttum?</a>
-          </div>
-
-          <button class="login-btn" type="button">Giriş Yap <span>→</span></button>
-        </form>
-
-        <p class="register-text">Hesabınız yok mu? <a href="#">Kayıt Ol</a></p>
+        <div class="tools"><label><input type="checkbox" checked /> Beni Hatırla</label><a href="#">Şifremi Unuttum?</a></div>
+        <button class="login-btn">Giriş Yap <span>→</span></button>
+        <p class="register">Hesabınız yok mu? <a href="#">Kayıt Ol</a></p>
       </div>
 
       <div class="trust-row">
-        <div><span>🛡️</span><b>Güvenli Platform</b><small>Verileriniz korunur</small></div>
-        <div><span>☁️</span><b>Her Yerden Erişim</b><small>İstediğin zaman, istediğin yerden</small></div>
-        <div><span>📱</span><b>Tüm Cihazlarda</b><small>Telefon, tablet ve bilgisayar uyumlu</small></div>
+        <div><b>🛡️</b><strong>Güvenli Platform</strong><span>Verileriniz korunur</span></div>
+        <div><b>☁️</b><strong>Her Yerden Erişim</strong><span>İstediğin zaman, istediğin yerden</span></div>
+        <div><b>▯</b><strong>Tüm Cihazlarda</strong><span>Telefon, tablet ve bilgisayar uyumlu</span></div>
       </div>
     </section>
-  </div>
-
-  <script src="app.js"></script>
+  </main>
 </body>
 </html>
