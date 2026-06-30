@@ -1,0 +1,14 @@
+/* style.css içine eklenebilir */
+.sac-logo{
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.loginHero .sac-logo{
+  margin-bottom: 40px;
+}
+.loginCard .sac-logo{
+  width: 220px;
+  margin: 0 auto 22px;
+}
