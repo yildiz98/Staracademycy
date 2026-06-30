@@ -20,70 +20,65 @@ function renderLogin(){
   app.innerHTML = `<div class="loginPage webOnly">
     <section class="loginHero premiumHero">
       <div class="brand big heroLogo"><span class="logoStar">★</span><div>STAR ACADEMY<br><small>CYPRUS</small></div></div>
-      <div class="heroDecor"><span></span><span></span><span></span><span></span><span></span></div>
+
+      <div class="heroParticles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
       <div class="heroCopy premiumCopy">
+        <span class="heroKicker">GELECEĞİNİ ŞEKİLLENDİR</span>
         <h1>Hayaline ulaşmanın<br><strong>en doğru yolu!</strong></h1>
         <p>Planlı çalış, düzenli tekrar yap ve hedefini gerçekleştir.</p>
         <i class="goldLine"></i>
       </div>
-      <div class="heroStage" aria-hidden="true">
-        <div class="blueGlow"></div>
-        <svg class="heroSvg" viewBox="0 0 760 420" role="img">
-          <defs>
-            <linearGradient id="bookBlue" x1="0" x2="1"><stop offset="0" stop-color="#061a3d"/><stop offset="1" stop-color="#174caa"/></linearGradient>
-            <linearGradient id="page" x1="0" x2="1"><stop offset="0" stop-color="#fff8ea"/><stop offset="1" stop-color="#dbe7ff"/></linearGradient>
-            <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#ffb323"/><stop offset="1" stop-color="#ffd86f"/></linearGradient>
-            <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000" flood-opacity=".38"/></filter>
-            <filter id="goldGlow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ffc238" flood-opacity=".88"/></filter>
-          </defs>
-          <path d="M40 270 C110 220 140 300 210 240 S320 250 390 190 470 220 520 165 610 170 700 105" fill="none" stroke="#1270ff" stroke-width="6" stroke-linecap="round" opacity=".78"/>
-          <path d="M682 108 l32-18 -9 36" fill="none" stroke="#1270ff" stroke-width="6" stroke-linecap="round"/>
-          <g opacity=".95">
-            <rect x="105" y="128" width="88" height="88" rx="18" fill="#103a82" stroke="#327cff" opacity=".72"/>
-            <path d="M128 181v-26h12v26m13 0v-43h12v43m13 0v-58h12v58" stroke="#8fc3ff" stroke-width="8"/>
-            <rect x="548" y="72" width="88" height="88" rx="18" fill="#103a82" stroke="#327cff" opacity=".72"/>
-            <circle cx="592" cy="116" r="25" fill="none" stroke="#8fc3ff" stroke-width="8"/><path d="M592 91v28l19 10" stroke="#8fc3ff" stroke-width="8" stroke-linecap="round"/>
-            <rect x="642" y="174" width="88" height="88" rx="18" fill="#103a82" stroke="#327cff" opacity=".72"/>
-            <circle cx="686" cy="218" r="24" fill="none" stroke="#8fc3ff" stroke-width="8"/><path d="M686 218l38-38m-17 0h17v17" stroke="#ffb323" stroke-width="7" stroke-linecap="round"/>
-          </g>
-          <g filter="url(#softShadow)">
-            <ellipse cx="350" cy="352" rx="260" ry="26" fill="#00122b" opacity=".45"/>
-            <path d="M108 288c94-20 226-20 320 0v44c-94 20-226 20-320 0z" fill="#0b2c68"/>
-            <path d="M108 288c94 24 226 24 320 0 13 8 20 19 0 29-94 24-226 24-320 0-18-8-14-21 0-29z" fill="url(#bookBlue)"/>
-            <path d="M141 248c96-20 230-20 326 0v44c-96 20-230 20-326 0z" fill="#09234f"/>
-            <path d="M141 248c96 24 230 24 326 0 13 8 20 19 0 29-96 24-230 24-326 0-18-8-14-21 0-29z" fill="url(#bookBlue)"/>
-            <path d="M174 205c108-58 220-58 335 0l-168 54z" fill="#061a3d" stroke="#315d9a"/>
-            <path d="M250 230h188v36c-48 28-120 28-188 0z" fill="#061a3d"/>
-            <path d="M342 258v50" stroke="#ffb323" stroke-width="5"/><circle cx="342" cy="313" r="8" fill="#ffb323"/>
-            <path d="M460 296c82-45 176-42 260 0v66c-82-35-176-35-260 0z" fill="url(#page)" stroke="#c9d6ef"/>
-            <path d="M590 296v66" stroke="#bec9df"/><path d="M500 322h80m30 0h70M495 342h83m36 0h70" stroke="#b7c4dc" stroke-width="2" opacity=".7"/>
-            <path d="M617 337l92-23" stroke="#07163a" stroke-width="7" stroke-linecap="round"/><path d="M706 314l20-5" stroke="#ffb323" stroke-width="7" stroke-linecap="round"/>
-            <g filter="url(#goldGlow)">
-              <path d="M498 80l31 66 72 9-53 49 14 71-64-36-63 36 14-71-53-49 72-9z" fill="url(#gold)" stroke="#ffefaa" stroke-width="3"/>
-              <path d="M448 284h104v38H448z" fill="#6c4412"/><path d="M428 322h144v34H428z" fill="#4b2f0f"/>
-            </g>
-          </g>
-        </svg>
+
+      <div class="heroArtwork" aria-hidden="true">
+        <div class="artGlow"></div>
+        <img src="assets/hero-education-object.png" alt="">
       </div>
+
       <div class="featureCards">
         ${feature('📖','Zengin İçerik','Binlerce soru ve konu anlatımı')}
         ${feature('🎯','Akıllı Takip','Gelişimini takip et, eksiklerini gör')}
         ${feature('📊','Detaylı Analiz','Başarı grafikleri ve performans analizi')}
-        ${feature('🏅','Hedefe Ulaş','Planlı çalış, başarını katla')}
+        ${feature('🏆','Hedefe Ulaş','Planlı çalış, başarını katla')}
       </div>
+
       <div class="heroCopyright">© 2026 Star Academy Cyprus. Tüm hakları saklıdır.</div>
     </section>
-    <section class="loginSide premiumSide"><div class="loginCard premiumLogin">
-      <div class="brand center"><span class="logoStar">★</span><div>STAR ACADEMY<br><small>CYPRUS</small></div></div>
-      <h2>Giriş Yap</h2><p class="muted">Hesabınıza giriş yaparak devam edin.</p>
-      <div class="roleGrid">${Object.keys(users).map(k=>`<button class="role ${state.role===k?'active':''}" onclick="saveRole('${k}')">${roleIcon(k)}<span>${roleLabel(k)}</span></button>`).join('')}</div>
-      <label>Kullanıcı Adı</label><div class="inputWrap">👤<input id="username" value="${r.username}" placeholder="Kullanıcı adınızı giriniz"></div>
-      <label>Şifre</label><div class="inputWrap">🔒<input id="password" type="password" value="${r.password}" placeholder="Şifrenizi giriniz"><em>◉</em></div>
-      <div class="loginTools"><label class="check"><input type="checkbox" checked> Beni Hatırla</label><a>Şifremi Unuttum?</a></div>
-      <button class="primary full premiumButton" onclick="enterApp()">Giriş Yap <span>→</span></button>
-      <div class="registerLine">Hesabınız yok mu? <a>Kayıt Ol</a></div>
-    </div>
-    <div class="trustRow"><div>🛡<b>Güvenli Platform</b><span>Verileriniz korunur</span></div><div>☁<b>Her Yerden Erişim</b><span>İstediğin zaman, istediğin yerden</span></div><div>💻<b>Web Odaklı</b><span>Bilgisayar ekranı için optimize</span></div></div>
+
+    <section class="loginSide premiumSide">
+      <div class="loginCard premiumLogin">
+        <div class="brand center"><span class="logoStar">★</span><div>STAR ACADEMY<br><small>CYPRUS</small></div></div>
+        <h2>Giriş Yap</h2>
+        <p class="muted">Hesabınıza giriş yaparak devam edin.</p>
+
+        <div class="roleGrid">
+          ${Object.keys(users).map(k=>`<button class="role ${state.role===k?'active':''}" onclick="saveRole('${k}')">${roleIcon(k)}<span>${roleLabel(k)}</span></button>`).join('')}
+        </div>
+
+        <label>Kullanıcı Adı</label>
+        <div class="inputWrap">👤<input id="username" value="${r.username}" placeholder="Kullanıcı adınızı giriniz"></div>
+
+        <label>Şifre</label>
+        <div class="inputWrap">🔒<input id="password" type="password" value="${r.password}" placeholder="Şifrenizi giriniz"><em>◉</em></div>
+
+        <div class="loginTools">
+          <label class="check"><input type="checkbox" checked> Beni Hatırla</label>
+          <a>Şifremi Unuttum?</a>
+        </div>
+
+        <button class="primary full premiumButton" onclick="enterApp()">Sisteme Giriş Yap <span>→</span></button>
+
+        <div class="registerDivider"><span>veya</span></div>
+        <div class="registerLine">Hesabın yok mu? <a>Kayıt Ol</a></div>
+      </div>
+
+      <div class="trustRow">
+        <div>🛡<b>Güvenli Platform</b><span>Verileriniz korunur</span></div>
+        <div>☁<b>Her Yerden Erişim</b><span>İstediğin zaman, istediğin yerden</span></div>
+        <div>💻<b>Web Odaklı</b><span>Bilgisayar ekranı için optimize</span></div>
+      </div>
     </section>
   </div>`;
 }
