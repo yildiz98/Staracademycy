@@ -1,6 +1,6 @@
 # Star Academy Cyprus
 
-KKTC Fen Lisesi & BEAL hazırlık sistemi için ilk demo sürüm.
+KKTC Fen Lisesi & BEAL hazırlık platformu demo sürümü.
 
 ## Giriş Bilgileri
 
@@ -8,22 +8,18 @@ KKTC Fen Lisesi & BEAL hazırlık sistemi için ilk demo sürüm.
 - Veli: `veli` / `1234`
 - Admin: `admin` / `1234`
 
-## Modüller
+## Bu sürümde güncellenenler
 
-- Öğrenci paneli
-- Veli portalı
-- Admin paneli
-- Konu anlatımları
-- Mini testler
-- Deneme sınavı görünümü
-- Çıkmış sorular bölümü
-- İstatistik ve yanlışlarım ekranı
+- Öğrenci paneli görseldeki premium dashboard tasarımına uyarlandı.
+- Veli portalı görseldeki takip paneli yapısına uyarlandı.
+- Sol menü, kartlar, başarı grafikleri, günlük görevler, son testler, zayıf konular ve öğretmen notu eklendi.
+- Kırık görseller kaldırıldı; sistem GitHub Pages üzerinde tek başına çalışır hale getirildi.
+- Mobil uyum düzenlendi.
 
 ## GitHub Pages Kurulum
 
-1. GitHub'da yeni repository oluştur.
-2. Bu zip içindeki dosyaları repository içine yükle.
-3. Settings > Pages bölümünden Branch: `main`, Folder: `/root` seç.
-4. Yayın linki birkaç dakika içinde oluşur.
+1. Zip içindeki dosyaları `staracademycy` reposuna yükle.
+2. GitHub > Settings > Pages kısmında Branch: `main`, Folder: `/root` seç.
+3. Birkaç dakika sonra site yayına girer.
 
-Bu sürüm demo verilerle çalışır. İkinci aşamada Firebase öğrenci/veli hesabı ve gerçek soru havuzu eklenebilir.
+Bu sürüm demo verilerle çalışır. Sonraki aşamada Firebase ile gerçek kullanıcı, veli bağlantısı, soru havuzu ve sonuç kayıtları eklenebilir.
