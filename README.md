@@ -29,3 +29,12 @@ Yüklenen arşivde 26 PDF kayıt algılandı. Bu sürümde arşiv sistem içinde
 ## GitHub Pages
 
 Dosyaları repository kök dizinine yükle. Settings > Pages > Branch `main` ve Folder `/root` seç.
+
+
+## V4 Güncelleme
+
+- Ana ekrandaki metin güncellendi: Hayaline ulaşmanın en doğru yolu!
+- Demo ibareleri kaldırıldı.
+- Soru havuzu ekranı aktif hale getirildi.
+- Uygulama içine 50 adet çözülebilir örnek soru bağlandı.
+- PDF/RAR arşivi ayrıca indirilebilir şekilde assets klasöründe korundu.
