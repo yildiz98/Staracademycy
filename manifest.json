@@ -3,7 +3,7 @@
   "short_name": "StarAcademyCY",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f5f8ff",
-  "theme_color": "#061b3a",
+  "background_color": "#eef5ff",
+  "theme_color": "#071A43",
   "icons": []
 }

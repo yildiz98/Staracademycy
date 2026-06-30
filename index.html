@@ -4,13 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Star Academy Cyprus</title>
-  <meta name="theme-color" content="#061b3a" />
+  <meta name="theme-color" content="#071A43" />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app"></div>
-  <script src="questionBank.js"></script>
+  <div class="container">
+    <section class="hero-left">
+      <div class="stars"></div>
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+
+      <header class="brand brand-left">
+        <img src="assets/star-logo.svg" alt="Star Academy Cyprus logo" />
+        <div>
+          <strong>STAR ACADEMY</strong>
+          <span>CYPRUS</span>
+        </div>
+      </header>
+
+      <main class="hero-content">
+        <h1>Hayaline ulaşmanın<br><span>en doğru yolu!</span></h1>
+        <p>Planlı çalış, düzenli tekrar yap ve hedefini gerçekleştir.</p>
+        <div class="gold-line"></div>
+
+        <div class="hero-visual-wrap">
+          <div class="chart-line" aria-hidden="true"></div>
+          <div class="floating-icon icon-chart">▥</div>
+          <div class="floating-icon icon-clock">◷</div>
+          <div class="floating-icon icon-target">◎</div>
+          <img class="hero-book" src="assets/hero-book.svg" alt="Kitap, mezuniyet kepi ve yıldız illüstrasyonu" />
+        </div>
+      </main>
+
+      <div class="feature-cards">
+        <article class="feature-card">
+          <span class="feature-icon blue">📖</span>
+          <h3>Zengin İçerik</h3>
+          <p>Binlerce soru ve konu anlatımı</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon green">🎯</span>
+          <h3>Akıllı Takip</h3>
+          <p>Gelişimini takip et, eksiklerini gör</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon purple">📊</span>
+          <h3>Detaylı Analiz</h3>
+          <p>Başarı grafikleri ve performans analizi</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon gold">🏅</span>
+          <h3>Hedefe Ulaş</h3>
+          <p>Planlı çalış, başarını katla</p>
+        </article>
+      </div>
+
+      <footer class="hero-footer">© 2026 Star Academy Cyprus. Tüm hakları saklıdır.</footer>
+    </section>
+
+    <section class="login-right">
+      <div class="login-card">
+        <header class="brand brand-card">
+          <img src="assets/star-logo.svg" alt="Star Academy Cyprus logo" />
+          <div>
+            <strong>STAR ACADEMY</strong>
+            <span>CYPRUS</span>
+          </div>
+        </header>
+
+        <h2>Giriş Yap</h2>
+        <p class="login-subtitle">Hesabınıza giriş yaparak devam edin.</p>
+
+        <div class="role-grid" role="tablist" aria-label="Giriş türü">
+          <button class="role active" type="button"><span>🎓</span>Öğrenci</button>
+          <button class="role" type="button"><span>👥</span>Veli</button>
+          <button class="role" type="button"><span>👤</span>Öğretmen</button>
+          <button class="role" type="button"><span>🛡️</span>Admin</button>
+        </div>
+
+        <form>
+          <label for="username">Kullanıcı Adı</label>
+          <div class="input-wrap">
+            <span>👤</span>
+            <input id="username" type="text" placeholder="Kullanıcı adınızı giriniz" />
+          </div>
+
+          <label for="password">Şifre</label>
+          <div class="input-wrap">
+            <span>🔒</span>
+            <input id="password" type="password" placeholder="Şifrenizi giriniz" />
+            <button type="button" class="eye">⌧</button>
+          </div>
+
+          <div class="form-tools">
+            <label class="remember"><input type="checkbox" checked /> Beni Hatırla</label>
+            <a href="#">Şifremi Unuttum?</a>
+          </div>
+
+          <button class="login-btn" type="button">Giriş Yap <span>→</span></button>
+        </form>
+
+        <p class="register-text">Hesabınız yok mu? <a href="#">Kayıt Ol</a></p>
+      </div>
+
+      <div class="trust-row">
+        <div><span>🛡️</span><b>Güvenli Platform</b><small>Verileriniz korunur</small></div>
+        <div><span>☁️</span><b>Her Yerden Erişim</b><small>İstediğin zaman, istediğin yerden</small></div>
+        <div><span>📱</span><b>Tüm Cihazlarda</b><small>Telefon, tablet ve bilgisayar uyumlu</small></div>
+      </div>
+    </section>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
