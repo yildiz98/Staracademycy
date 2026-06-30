@@ -1,19 +1,19 @@
-# Star Academy Cyprus - Web Giriş Tasarım Paketi V2
+# Star Academy Cyprus V1.0 - Web Odaklı Premium Sürüm
 
-Bu paket, hedef görsele yakın olacak şekilde hazırlanmış web giriş ekranıdır.
+Bu paket GitHub Pages için hazırlanmıştır.
 
-## İçerik
-- `index.html`
-- `style.css`
-- `assets/star-logo.svg`
-- `assets/hero-book.svg`
+## Odak
+- Tamamen masaüstü WEB tasarımı
+- Premium giriş ekranı
+- Öğrenci / Veli / Öğretmen / Admin giriş rolleri
+- Soru havuzu listesi ve çözülebilir örnek sorular
+- `assets/lise-deneme-programi-soru-havuzu.rar` arşivi pakete dahildir
+
+## Giriş Bilgileri
+- Öğrenci: `ogrenci` / `1234`
+- Veli: `veli` / `1234`
+- Öğretmen: `ogretmen` / `1234`
+- Admin: `admin` / `1234`
 
 ## GitHub Pages
-Dosyaları repository kök dizinine yükleyip Pages bölümünden yayınlayabilirsin.
-
-## Yapı
-- Sol taraf: %58 hero alanı
-- Sağ taraf: %42 login alanı
-- 3D kitap/yıldız illüstrasyonu SVG olarak eklendi
-- Feature kartları eklendi
-- Glow, çizgi, yıldız ve grafik efektleri CSS/SVG ile oluşturuldu
+Dosyaları repository kök dizinine yükleyin. Settings > Pages > Branch: `main`, Folder: `/root`.
